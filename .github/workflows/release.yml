@@ -51,7 +51,3 @@ jobs:
             target/tree-sitter-*.gz
             target/tree-sitter.wasm
             target/tree-sitter.js
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: |
-          cd ${{ matrix.directory }}
-          npm publish
